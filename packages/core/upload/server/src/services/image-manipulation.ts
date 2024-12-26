@@ -36,13 +36,13 @@ const writeStreamToFile = (stream: NodeJS.ReadWriteStream, path: string) =>
 const getMetadata = (file: UploadableFile): Promise<sharp.Metadata> => {
   if (!file.filepath) {
     return new Promise((resolve, reject) => {
-      const pipeline = sharp();
+      const pipeline = sharp({ failOnError: false });
       pipeline.metadata().then(resolve).catch(reject);
       file.getStream().pipe(pipeline);
     });
   }
 
-  return sharp(file.filepath).metadata();
+  return sharp(file.filepath, { failOnError: false }).metadata();
 };
 
 const getDimensions = async (file: UploadableFile): Promise<Dimensions> => {
@@ -72,7 +72,7 @@ const resizeFileTo = async (
 
   let newInfo;
   if (!file.filepath) {
-    const transform = sharp()
+    const transform = sharp({ failOnError: false })
       .resize(options)
       .on('info', (info) => {
         newInfo = info;
@@ -80,7 +80,7 @@ const resizeFileTo = async (
 
     await writeStreamToFile(file.getStream().pipe(transform), filePath);
   } else {
-    newInfo = await sharp(file.filepath).resize(options).toFile(filePath);
+    newInfo = await sharp(file.filepath, { failOnError: false }).resize(options).toFile(filePath);
   }
 
   const { width, height, size } = newInfo ?? {};
@@ -134,9 +134,9 @@ const optimize = async (file: UploadableFile) => {
   if ((sizeOptimization || autoOrientation) && isOptimizableFormat(format)) {
     let transformer;
     if (!file.filepath) {
-      transformer = sharp();
+      transformer = sharp({ failOnError: false });
     } else {
-      transformer = sharp(file.filepath);
+      transformer = sharp(file.filepath, { failOnError: false });
     }
     // reduce image quality
     transformer[format]({ quality: sizeOptimization ? 80 : 100 });
@@ -244,14 +244,14 @@ const breakpointSmallerThan = (breakpoint: number, { width, height }: Dimensions
 const isFaultyImage = async (file: UploadableFile) => {
   if (!file.filepath) {
     return new Promise((resolve, reject) => {
-      const pipeline = sharp();
+      const pipeline = sharp({ failOnError: false });
       pipeline.stats().then(resolve).catch(reject);
       file.getStream().pipe(pipeline);
     });
   }
 
   try {
-    await sharp(file.filepath).stats();
+    await sharp(file.filepath, { failOnError: false }).stats();
     return false;
   } catch (e) {
     return true;

@@ -212,9 +212,6 @@ export default ({ strapi }: { strapi: Core.Strapi }) => {
       .service('image-manipulation');
 
     if (await isImage(currentFile)) {
-      if (await isFaultyImage(currentFile)) {
-        throw new ApplicationError('File is not a valid image');
-      }
       if (await isOptimizableImage(currentFile)) {
         return optimize(currentFile);
       }
