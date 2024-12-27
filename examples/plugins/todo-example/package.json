@@ -24,7 +24,7 @@
     "lint": "eslint ."
   },
   "peerDependencies": {
-    "@strapi/strapi": "workspace:*"
+    "@strapi/strapi": "5.5.1"
   },
   "dependencies": {
     "@strapi/design-system": "2.0.0-rc.14",
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@strapi/sdk-plugin": "^5.2.0",
-    "@strapi/strapi": "workspace:*"
+    "@strapi/strapi": "5.5.1"
   },
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
