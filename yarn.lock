@@ -8510,7 +8510,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@strapi/admin-test-utils@npm:5.5.1, @strapi/admin-test-utils@workspace:*, @strapi/admin-test-utils@workspace:packages/admin-test-utils":
+"@strapi/admin-test-utils@npm:5.5.1, @strapi/admin-test-utils@workspace:packages/admin-test-utils":
   version: 0.0.0-use.local
   resolution: "@strapi/admin-test-utils@workspace:packages/admin-test-utils"
   dependencies:
@@ -9214,7 +9214,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@strapi/plugin-color-picker@workspace:*, @strapi/plugin-color-picker@workspace:packages/plugins/color-picker":
+"@strapi/plugin-color-picker@npm:5.5.1, @strapi/plugin-color-picker@workspace:packages/plugins/color-picker":
   version: 0.0.0-use.local
   resolution: "@strapi/plugin-color-picker@workspace:packages/plugins/color-picker"
   dependencies:
@@ -9240,7 +9240,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@strapi/plugin-documentation@workspace:*, @strapi/plugin-documentation@workspace:packages/plugins/documentation":
+"@strapi/plugin-documentation@npm:5.5.1, @strapi/plugin-documentation@workspace:packages/plugins/documentation":
   version: 0.0.0-use.local
   resolution: "@strapi/plugin-documentation@workspace:packages/plugins/documentation"
   dependencies:
@@ -9291,7 +9291,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@strapi/plugin-graphql@workspace:*, @strapi/plugin-graphql@workspace:packages/plugins/graphql":
+"@strapi/plugin-graphql@npm:5.5.1, @strapi/plugin-graphql@workspace:packages/plugins/graphql":
   version: 0.0.0-use.local
   resolution: "@strapi/plugin-graphql@workspace:packages/plugins/graphql"
   dependencies:
@@ -9336,7 +9336,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@strapi/plugin-sentry@workspace:*, @strapi/plugin-sentry@workspace:packages/plugins/sentry":
+"@strapi/plugin-sentry@npm:5.5.1, @strapi/plugin-sentry@workspace:packages/plugins/sentry":
   version: 0.0.0-use.local
   resolution: "@strapi/plugin-sentry@workspace:packages/plugins/sentry"
   dependencies:
@@ -9359,7 +9359,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@strapi/plugin-users-permissions@workspace:*, @strapi/plugin-users-permissions@workspace:packages/plugins/users-permissions":
+"@strapi/plugin-users-permissions@npm:5.5.1, @strapi/plugin-users-permissions@workspace:packages/plugins/users-permissions":
   version: 0.0.0-use.local
   resolution: "@strapi/plugin-users-permissions@workspace:packages/plugins/users-permissions"
   dependencies:
@@ -9413,7 +9413,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@strapi/provider-email-mailgun@workspace:*, @strapi/provider-email-mailgun@workspace:packages/providers/email-mailgun":
+"@strapi/provider-email-mailgun@npm:5.5.1, @strapi/provider-email-mailgun@workspace:packages/providers/email-mailgun":
   version: 0.0.0-use.local
   resolution: "@strapi/provider-email-mailgun@workspace:packages/providers/email-mailgun"
   dependencies:
@@ -9464,7 +9464,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@strapi/provider-upload-aws-s3@workspace:*, @strapi/provider-upload-aws-s3@workspace:packages/providers/upload-aws-s3":
+"@strapi/provider-upload-aws-s3@npm:5.5.1, @strapi/provider-upload-aws-s3@workspace:packages/providers/upload-aws-s3":
   version: 0.0.0-use.local
   resolution: "@strapi/provider-upload-aws-s3@workspace:packages/providers/upload-aws-s3"
   dependencies:
@@ -9480,7 +9480,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@strapi/provider-upload-cloudinary@workspace:*, @strapi/provider-upload-cloudinary@workspace:packages/providers/upload-cloudinary":
+"@strapi/provider-upload-cloudinary@npm:5.5.1, @strapi/provider-upload-cloudinary@workspace:packages/providers/upload-cloudinary":
   version: 0.0.0-use.local
   resolution: "@strapi/provider-upload-cloudinary@workspace:packages/providers/upload-cloudinary"
   dependencies:
@@ -9570,7 +9570,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@strapi/strapi@npm:5.5.1, @strapi/strapi@workspace:*, @strapi/strapi@workspace:packages/core/strapi":
+"@strapi/strapi@npm:5.5.1, @strapi/strapi@workspace:packages/core/strapi":
   version: 0.0.0-use.local
   resolution: "@strapi/strapi@workspace:packages/core/strapi"
   dependencies:
@@ -15184,7 +15184,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"create-strapi-app@npm:5.5.1, create-strapi-app@workspace:*, create-strapi-app@workspace:packages/cli/create-strapi-app":
+"create-strapi-app@npm:5.5.1, create-strapi-app@workspace:packages/cli/create-strapi-app":
   version: 0.0.0-use.local
   resolution: "create-strapi-app@workspace:packages/cli/create-strapi-app"
   dependencies:
@@ -17875,8 +17875,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "experimental-dev@workspace:examples/experimental-dev"
   dependencies:
-    "@strapi/plugin-users-permissions": "workspace:*"
-    "@strapi/strapi": "workspace:*"
+    "@strapi/plugin-users-permissions": "npm:5.5.1"
+    "@strapi/strapi": "npm:5.5.1"
     "@vitejs/plugin-react": "npm:4.2.1"
     babel-plugin-react-compiler: "npm:0.0.0-experimental-c23de8d-20240515"
     better-sqlite3: "npm:11.3.0"
@@ -18904,15 +18904,15 @@ __metadata:
   resolution: "getstarted@workspace:examples/getstarted"
   dependencies:
     "@strapi/icons": "npm:2.0.0-rc.14"
-    "@strapi/plugin-color-picker": "workspace:*"
-    "@strapi/plugin-documentation": "workspace:*"
-    "@strapi/plugin-graphql": "workspace:*"
-    "@strapi/plugin-sentry": "workspace:*"
-    "@strapi/plugin-users-permissions": "workspace:*"
-    "@strapi/provider-email-mailgun": "workspace:*"
-    "@strapi/provider-upload-aws-s3": "workspace:*"
-    "@strapi/provider-upload-cloudinary": "workspace:*"
-    "@strapi/strapi": "workspace:*"
+    "@strapi/plugin-color-picker": "npm:5.5.1"
+    "@strapi/plugin-documentation": "npm:5.5.1"
+    "@strapi/plugin-graphql": "npm:5.5.1"
+    "@strapi/plugin-sentry": "npm:5.5.1"
+    "@strapi/plugin-users-permissions": "npm:5.5.1"
+    "@strapi/provider-email-mailgun": "npm:5.5.1"
+    "@strapi/provider-upload-aws-s3": "npm:5.5.1"
+    "@strapi/provider-upload-cloudinary": "npm:5.5.1"
+    "@strapi/strapi": "npm:5.5.1"
     better-sqlite3: "npm:11.3.0"
     lodash: "npm:4.17.21"
     mysql2: "npm:3.9.8"
@@ -18922,7 +18922,7 @@ __metadata:
     react-dom: "npm:18.3.1"
     react-intl: "npm:6.6.2"
     react-router-dom: "npm:6.22.3"
-    strapi-plugin-workspace-plugin: "workspace:*"
+    strapi-plugin-workspace-plugin: "npm:0.0.0"
     styled-components: "npm:6.1.8"
   languageName: unknown
   linkType: soft
@@ -19925,15 +19925,6 @@ __metadata:
   dependencies:
     ms: "npm:^2.0.0"
   checksum: 10c0/f34a2c20161d02303c2807badec2f3b49cbfbbb409abd4f95a07377ae01cfe6b59e3d15ac609cffcd8f2521f0eb37b7e1091acf65da99aa2a4f1ad63c21e7e7a
-  languageName: node
-  linkType: hard
-
-"husky@npm:8.0.3":
-  version: 8.0.3
-  resolution: "husky@npm:8.0.3"
-  bin:
-    husky: lib/bin.js
-  checksum: 10c0/6722591771c657b91a1abb082e07f6547eca79144d678e586828ae806499d90dce2a6aee08b66183fd8b085f19d20e0990a2ad396961746b4c8bd5bdb619d668
   languageName: node
   linkType: hard
 
@@ -22160,8 +22151,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "kitchensink-ts@workspace:examples/kitchensink-ts"
   dependencies:
-    "@strapi/plugin-users-permissions": "workspace:*"
-    "@strapi/strapi": "workspace:*"
+    "@strapi/plugin-users-permissions": "npm:5.5.1"
+    "@strapi/strapi": "npm:5.5.1"
     better-sqlite3: "npm:11.3.0"
     react: "npm:18.3.1"
     react-dom: "npm:18.3.1"
@@ -22174,10 +22165,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "kitchensink@workspace:examples/kitchensink"
   dependencies:
-    "@strapi/provider-email-mailgun": "workspace:*"
-    "@strapi/provider-upload-aws-s3": "workspace:*"
-    "@strapi/provider-upload-cloudinary": "workspace:*"
-    "@strapi/strapi": "workspace:*"
+    "@strapi/provider-email-mailgun": "npm:5.5.1"
+    "@strapi/provider-upload-aws-s3": "npm:5.5.1"
+    "@strapi/provider-upload-cloudinary": "npm:5.5.1"
+    "@strapi/strapi": "npm:5.5.1"
     better-sqlite3: "npm:11.3.0"
     lodash: "npm:4.17.21"
     mysql2: "npm:3.9.8"
@@ -29135,18 +29126,18 @@ __metadata:
     "@strapi/design-system": "npm:2.0.0-rc.14"
     "@strapi/icons": "npm:2.0.0-rc.14"
     "@strapi/sdk-plugin": "npm:^5.2.0"
-    "@strapi/strapi": "workspace:*"
+    "@strapi/strapi": "npm:5.5.1"
     eslint: "npm:8.50.0"
     react: "npm:^18.0.0"
     react-dom: "npm:^18.0.0"
     react-router-dom: "npm:^6.0.0"
     styled-components: "npm:^6.0.0"
   peerDependencies:
-    "@strapi/strapi": "workspace:*"
+    "@strapi/strapi": 5.5.1
   languageName: unknown
   linkType: soft
 
-"strapi-plugin-workspace-plugin@workspace:*, strapi-plugin-workspace-plugin@workspace:examples/plugins/workspace-plugin":
+"strapi-plugin-workspace-plugin@npm:0.0.0, strapi-plugin-workspace-plugin@workspace:examples/plugins/workspace-plugin":
   version: 0.0.0-use.local
   resolution: "strapi-plugin-workspace-plugin@workspace:examples/plugins/workspace-plugin"
   languageName: unknown
@@ -29164,7 +29155,7 @@ __metadata:
     "@commitlint/prompt-cli": "npm:19.2.0"
     "@nx/js": "npm:20.1.0"
     "@playwright/test": "npm:1.48.2"
-    "@strapi/admin-test-utils": "workspace:*"
+    "@strapi/admin-test-utils": "npm:5.5.1"
     "@strapi/eslint-config": "npm:0.2.0"
     "@swc-node/register": "npm:~1.9.1"
     "@swc/cli": "npm:0.3.10"
@@ -29182,7 +29173,7 @@ __metadata:
     chokidar: "npm:3.6.0"
     coffee: "npm:5.5.1"
     core-js: "npm:3.36.0"
-    create-strapi-app: "workspace:*"
+    create-strapi-app: "npm:5.5.1"
     cross-env: "npm:7.0.3"
     dotenv: "npm:16.4.5"
     eslint: "npm:8.50.0"
@@ -29206,7 +29197,6 @@ __metadata:
     fs-extra: "npm:11.2.0"
     get-port: "npm:5.1.1"
     glob: "npm:10.3.10"
-    husky: "npm:8.0.3"
     inquirer: "npm:8.2.5"
     jest: "npm:29.6.0"
     jest-circus: "npm:29.6.0"
